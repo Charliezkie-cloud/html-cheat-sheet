@@ -1,4 +1,3 @@
-import "https://kit.fontawesome.com/a9bae01479.js";
 import "./style.css";
 import "./contents.js";
 

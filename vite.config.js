@@ -5,5 +5,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
     optimizeDeps: {
         include: ["monaco-editor"]
-    }
+    },
+    base: "/html-cheat-sheet/"
 });
