@@ -27,8 +27,13 @@ export default class Navbar {
         
         this.headerEl.innerHTML = `<nav class="bg-gray-200 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
           <div class="max-w-7xl mx-2 md:mx-6 lg:mx-8 xl:mx-auto flex flex-row md:flex-col justify-between items-center md:items-start gap-4 p-4">
-            <a class="text-xl sm:text-2xl w-full font-semibold">HTML Cheat Sheet</a>
-            <ul class="hidden md:inline-flex flex-wrap gap-4 w-full navbarLinks"></ul>
+            <a href="#" class="text-xl sm:text-2xl font-semibold">HTML Cheat Sheet</a>
+            <div class="grid grid-cols-6 gap-4">
+              <ul class="hidden md:inline-flex col-span-5 flex-wrap gap-4 navbarLinks"></ul>
+              <button type="button" onclick="window.toggleTheme(this)" class="themeToggle hidden md:block self-center place-self-end bg-transparent hover:bg-gray-300 dark:hover:bg-gray-700 active:bg-gray-300/50 dark:active:bg-gray-700/50 focus:outline-2 focus:outline-offset-2 focus:outline-gray-400 dark:focus:outline-gray-600 rounded-lg h-8 w-10">
+                <i class="fa-solid fa-moon text-lg"></i>
+              </button>
+            </div>
             <button type="button" onclick="window.openNavbarOffcanvas()" class="block md:hidden bg-transparent hover:bg-gray-300 dark:hover:bg-gray-700 active:bg-gray-300/50 dark:active:bg-gray-700/50 focus:outline-2 focus:outline-offset-2 focus:outline-gray-400 dark:focus:outline-gray-600 rounded-lg h-8 w-10">
               <span class="fa-solid fa-bars text-lg"></span>
             </button>
@@ -43,7 +48,10 @@ export default class Navbar {
                   </button>
                 </div>
                 <div>
-                  <ul class="flex flex-col gap-4 navbarLinks"></ul>
+                  <ul class="flex flex-col gap-4 mb-4 navbarLinks"></ul>
+                  <button type="button" onclick="window.toggleTheme(this)" class="themeToggle bg-transparent hover:bg-gray-300 dark:hover:bg-gray-700 active:bg-gray-300/50 dark:active:bg-gray-700/50 focus:outline-2 focus:outline-offset-2 focus:outline-gray-400 dark:focus:outline-gray-600 rounded-lg h-8 w-full">
+                    <i class="fa-solid fa-moon text-lg"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -54,7 +62,7 @@ export default class Navbar {
         for (const containers of navbarLinks) {
             for (const item of this.items) {
                 const li = newEl("li");
-                const a = newEl("a", "text-gray-700 dark:text-gray-300 hover:text-rose-500 :hover:text-rose-400 active:text-rose-500/50 :active:text-rose-400/50 focus:underline focus:underline-offset-5", item.title, item.href);
+                const a = newEl("a", "text-gray-700 dark:text-gray-300 hover:text-rose-500 dark:hover:text-rose-400 active:text-rose-500/50 dark:active:text-rose-400/50 focus:underline focus:underline-offset-4", item.title, item.href);
                 a.addEventListener("click", () => {
                   window.closeNavbarOffcanvas();
                 });

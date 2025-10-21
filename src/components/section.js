@@ -33,7 +33,7 @@ export default class Section {
         }
 
         const section = newEl("section", "max-w-7xl mx-0 md:mx-6 lg:mx-8 xl:mx-auto bg-gray-200/50 dark:bg-gray-900/50 text-gray-800 dark:text-gray-200 p-6 rounded-none sm:rounded-xl border mb-4 border-gray-300 dark:border-gray-700");
-        const title = newEl("h1", "text-xl sm:text-2xl font-semibold mb-4", this.data.section, this.data.section.toLowerCase().replace(" ", "-"))
+        const title = newEl("h1", "text-xl sm:text-2xl font-semibold mb-4", this.data.section, this.data.section.toLowerCase().split(" ").join("-"))
         const ul = newEl("ul", "flex flex-col gap-4");
 
         for (const item of this.data.items) {

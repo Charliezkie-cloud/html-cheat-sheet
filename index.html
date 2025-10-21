@@ -2,13 +2,47 @@
 <html lang="en" class="light">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Cheat Sheet</title>
+    <title>HTML Cheat Sheet | Quick Reference for Students and Developers</title>
+    <meta name="description" content="A complete HTML cheat sheet created by Charles Henry M. Tinoy Jr. — includes basic tags, attributes, and examples to help students and web developers learn faster." />
+    <meta name="keywords" content="HTML cheat sheet, HTML tags, web development, HTML reference, beginner HTML guide, Charles Henry Tinoy Jr, University of Cebu, IT student" />
+    <meta name="author" content="Charles Henry M. Tinoy Jr." />
+    <meta property="og:title" content="HTML Cheat Sheet | Learn HTML Fast" />
+    <meta property="og:description" content="A full HTML reference page made by Charles Henry M. Tinoy Jr. for easy learning and quick lookup." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://charliezkie-cloud.github.io/html-cheat-sheet" />
+    <meta name="twitter:title" content="HTML Cheat Sheet | Learn HTML Fast" />
+    <meta name="twitter:description" content="A simple HTML cheat sheet made by Charles Henry M. Tinoy Jr. for students and web developers." />
+    <meta name="twitter:image" content="https://yourdomain.com/preview.jpg" />
+    <link rel="icon" type="image/svg+xml" href="/html.png" />
+    <link rel="canonical" href="https://charliezkie-cloud.github.io/html-cheat-sheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "HTML Cheat Sheet",
+        "description": "A simple and complete HTML reference for beginners and IT students.",
+        "author": {
+          "@type": "Person",
+          "name": "Charles Henry M. Tinoy Jr."
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "University of Cebu"
+        },
+        "mainEntity": {
+          "@type": "CreativeWork",
+          "name": "HTML Cheat Sheet",
+          "about": "Web development, HTML, learning resources"
+        }
+      }
+    </script>
+    <meta name="robots" content="index, follow" />
   </head>
   <body class="bg-white dark:bg-gray-800">
     <div id="app">
       <header>
+        <div class="navContainer"></div>
         <!-- <nav class="bg-gray-200 text-gray-800">
           <div class="max-w-7xl mx-2 md:mx-6 lg:mx-8 xl:mx-auto flex flex-row md:flex-col justify-between items-center md:items-start gap-4 p-4">
             <a class="text-xl sm:text-2xl w-full font-semibold">HTML Cheat Sheet</a>
@@ -57,9 +91,21 @@
             </div>
           </div>
         </nav> -->
+        <div class="alertContainer"></div>
+        <!-- <div class="w-full text-sm bg-green-400/50 dark:bg-green-600/50 text-gray-800 dark:text-gray-200 border-b border-b-green-500">
+          <div class="max-w-7xl mx-4 md:mx-6 lg:mx-8 xl:mx-auto py-2 text-center">
+            <p class="inline-flex flex-wrap items-center gap-1">Try out my
+              <a href="#" class="font-semibold hover:underline hover:underline-offset-4">
+                HTML Live Editor
+              </a>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </p>
+          </div>
+        </div> -->
       </header>
 
       <main class="my-6 sm:my-12">
+
         <!-- <section class="max-w-7xl mx-0 md:mx-6 lg:mx-8 xl:mx-auto bg-gray-200/50 text-gray-800 p-6 rounded-none sm:rounded-xl border mb-4 border-gray-300">
           <h1 class="text-xl sm:text-2xl font-semibold mb-4">CodeMirror Test</h1>
           <div id="editor-container"></div>
@@ -79,6 +125,43 @@
           </ul>
         </section> -->
       </main>
+
+      <footer>
+        <!-- <nav class="bg-gray-200 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+          <div class="max-w-7xl mx-4 md:mx-6 lg:mx-8 xl:mx-auto py-6">
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+              <div>
+                <a class="text-xl sm:text-2xl w-full font-semibold" href="#">HTML Cheat Sheet</a>
+                <p class="opacity-75 text-sm my-2">By Charles Henry M. Tinoy Jr.</p>
+                <p class="opacity-75 text-xs">&copy; 2025</p>
+              </div>
+              <div>
+                <h1 class="text-lg sm:text-xl font-semibold mb-4">Page Contents</h1>
+                <div class="grid grid-cols-3">
+                  <ul class="flex flex-col gap-2">
+                    <li><a href="#" class="text-gray-700 dark:text-gray-300 hover:text-rose-500 dark:hover:text-rose-400 active:text-rose-500/50 dark:active:text-rose-400/50 focus:underline focus:underline-offset-4">Hello world</a></li>
+                    <li><a href="#" class="text-gray-700 dark:text-gray-300 hover:text-rose-500 dark:hover:text-rose-400 active:text-rose-500/50 dark:active:text-rose-400/50 focus:underline focus:underline-offset-4">Hello world</a></li>
+                    <li><a href="#" class="text-gray-700 dark:text-gray-300 hover:text-rose-500 dark:hover:text-rose-400 active:text-rose-500/50 dark:active:text-rose-400/50 focus:underline focus:underline-offset-4">Hello world</a></li>
+                    <li><a href="#" class="text-gray-700 dark:text-gray-300 hover:text-rose-500 dark:hover:text-rose-400 active:text-rose-500/50 dark:active:text-rose-400/50 focus:underline focus:underline-offset-4">Hello world</a></li>
+                  </ul>
+                  <ul class="flex flex-col gap-2">
+                    <li><a href="#" class="text-gray-700 dark:text-gray-300 hover:text-rose-500 dark:hover:text-rose-400 active:text-rose-500/50 dark:active:text-rose-400/50 focus:underline focus:underline-offset-4">Hello world</a></li>
+                    <li><a href="#" class="text-gray-700 dark:text-gray-300 hover:text-rose-500 dark:hover:text-rose-400 active:text-rose-500/50 dark:active:text-rose-400/50 focus:underline focus:underline-offset-4">Hello world</a></li>
+                    <li><a href="#" class="text-gray-700 dark:text-gray-300 hover:text-rose-500 dark:hover:text-rose-400 active:text-rose-500/50 dark:active:text-rose-400/50 focus:underline focus:underline-offset-4">Hello world</a></li>
+                    <li><a href="#" class="text-gray-700 dark:text-gray-300 hover:text-rose-500 dark:hover:text-rose-400 active:text-rose-500/50 dark:active:text-rose-400/50 focus:underline focus:underline-offset-4">Hello world</a></li>
+                  </ul>
+                  <ul class="flex flex-col gap-2">
+                    <li><a href="#" class="text-gray-700 dark:text-gray-300 hover:text-rose-500 dark:hover:text-rose-400 active:text-rose-500/50 dark:active:text-rose-400/50 focus:underline focus:underline-offset-4">Hello world</a></li>
+                    <li><a href="#" class="text-gray-700 dark:text-gray-300 hover:text-rose-500 dark:hover:text-rose-400 active:text-rose-500/50 dark:active:text-rose-400/50 focus:underline focus:underline-offset-4">Hello world</a></li>
+                    <li><a href="#" class="text-gray-700 dark:text-gray-300 hover:text-rose-500 dark:hover:text-rose-400 active:text-rose-500/50 dark:active:text-rose-400/50 focus:underline focus:underline-offset-4">Hello world</a></li>
+                    <li><a href="#" class="text-gray-700 dark:text-gray-300 hover:text-rose-500 dark:hover:text-rose-400 active:text-rose-500/50 dark:active:text-rose-400/50 focus:underline focus:underline-offset-4">Hello world</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav> -->
+      </footer>
     </div>
 
     <script type="module" src="/src/main.js"></script>
